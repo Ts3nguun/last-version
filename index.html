@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devivce-width, initial-scale=1.0" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
+        header {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            gap: 575px;
+            position: fixed;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: 32px;
+        }
+
+        button {
+            height: 40px;
+            width: 264px;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 16px;
+
+        }
+
+        #section-1 {
+            background-image: url(logo\ pic.jpeg);
+            background-size: cover;
+        }
+
+        #section-2 {
+            background-image: url(2pic.png);
+            background-size: cover;
+
+        }
+
+        #section-3 {
+            background-image: url(3pic.png);
+            background-size: cover;
+
+        }
+
+        #section-4 {
+            background-image: url(4pic.png);
+            background-size: cover;
+
+        }
+
+        #section-5 {
+            background-image: url(5pic.png);
+            background-size: cover;
+
+        }
+
+        #section-6 {
+            position: relative;
+        }
+
+        #section-7 {
+            background-image: url('./7pic.png');
+            background-size: cover;
+        }
+
+        #section-8 {
+            background-image: url(8pic.png);
+            background-size: cover;
+        }
+
+        #section-9 {
+            background-image: url(9pic.png);
+            background-size: cover;
+        }
+
+        #section-10 {
+            background-image: url('./10pic.png');
+            background-size: cover;
+        }
+
+        btn-white {
+            background: rgba(244, 244, 244, 0.8);
+            backdrop-filter: blur(4px);
+            color: black;
+        }
+
+        btn-black {
+            background: rgba(23, 26, 32, 0.65);
+            backdrop-filter: blur(4px);
+            color: #FFFFFF;
+        }
+        .text {
+            color: black;
+        }
+        .down{
+            color:white
+        }
+
+        .desc {
+            /* margin-top: 128px; */
+        }
+
+        .desc h1 {
+            color: white
+        }
+
+        .desc h2 {
+            color: white;
+        }
+
+        .desc h3 {
+            color: white;
+        }
+
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 24px;
+        }
+
+        video {
+            width: 100vw;
+            height: 100%;
+        }
+
+        video source {
+            width: 100vw;
+            height: 100%;
+        }
+
+        .absolute {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 128px;
+        }
+    </style>
+    <title>TESLA CLONE</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="Site Logo.png" alt="Tesla logo" id="logo" />
+
+        <span id="menus">
+            <a class="menu-item" href="#section-1">Vehicles</a>
+            <a class="menu-item" href="#section-2">Energy</a>
+            <a class="menu-item" href="#section-3">Charging</a>
+            <a class="menu-item" href="#section-4">Discover</a>
+            <a class="menu-item" href="#section-5">Shop</a>
+
+        </span>
+    </header>
+    <main>
+        <section id="section-1" class="section">
+            <div class="desc">
+                <h1>MODEL Y</h1>
+                <h2>FROM 31,890</h2>
+                <h3>After Federal Tax Credit & Est. Gas Savings</h3>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Shop Available</button>
+                        <button id="btn-black">Demo Drive</button>
+                    </div>
+                    <div class="down">
+                    *Price before incentives and savings is $42,990, excluding taxes and fees.Subject to change.
+                    </div>
+                    <br>
+                    <a>Learn about est. gas savings.</a>
+                </span>
+
+        </section>
+        <section id="section-2" class="section">
+            <div class="text">
+                <h1>Brand New Model 3</h1>
+                <h2>Lease starting at $329/mo*</h2>
+
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Custom order</button>
+                        <button id="btn-black">Demo Drive</button>
+                    </div>
+                    <div class="down">
+                    *Excludes taxes and fees with price subject to change. Available in select states.
+                    </div>
+                    <br>
+                    <a>See details.</a>
+                </span>
+
+        </section>
+        <section id="section-3" class="section">
+            <div class="text">
+                <h1>MODEL X</h1>
+                <h2>From $68,590*</h2>
+                <h3>After Federal Tax Credit & Est. Gas Savings</h3>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Custom order</button>
+                        <button id="btn-black">Demo Drive</button>
+                    </div>
+                    <div class="down">
+                    *Excludes taxes and fees with price subject to change. Available in select states.
+                    </div>
+                    <br>
+                    <a>See details.</a>
+                </span>
+
+        </section>
+        <section id="section-4" class="section">
+            <div class="text">
+                <h1>MODEL S</h1>
+                <h2>From $71,090*</h2>
+                <h3>After Est. Gas Savings</h3>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Custom order</button>
+                        <button id="btn-black">Demo Drive</button>
+                    </div>
+                    *Excludes taxes and fees with price subject to change. Available in select states.
+                    <br>
+                    See details.
+                </span>
+
+        </section>
+        <section id="section-5" class="section">
+            <div class="desc">
+
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Order Now</button>
+                        <button id="btn-black">learne More</button>
+                    </div>
+                </span>
+
+        </section>
+        <section id="section-6" class="section">
+            <video class="video" allowfullscreen loop autoplay>
+                <source src="6video.webm" type="video/webm">
+            </video>
+            <div class="desc absolute">
+                <div>
+                    <h1>Experience Tesla</h1>
+                    <h2>Schedule a Demo Drive Today</h2>
+                </div>
+                <div class="content">
+                    <span>
+                        <div class="btn-container">
+                            <button id="btn-white">Learn More</button>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="section-7" class="section">
+            <div class="desc">
+                <h1>Solar Panels</h1>
+                <h2>Shchedule a Virtual Consultation</h2>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Order NOw</button>
+                        <button id="btn-black">Learne More</button>
+                    </div>
+                </span>
+
+        </section>
+        <section id="section-8" class="section">
+            <div class="tetx">
+                <h1>Solar Roof</h1>
+                <h2>Produce Clean Energy From Your Roof</h2>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Order Now</button>
+                        <button id="btn-black">Learne More</button>
+                    </div>
+                </span>
+
+        </section>
+        <section id="section-9" class="section">
+            <div class="text">
+                <h1>Powerwall</h1>
+            </div>
+            <div class="content">
+                <span>
+                    <div class="btn-container">
+                        <button id="btn-white">Order Now</button>
+                        <button id="btn-black">Learn More</button>
+                    </div>
+
+                </span>
+
+        </section>
+        <section id="section-10" class="section">
+            <div class="text">
+                <h1>Accessoories</h1>
+            </div>
+            <div class="content">
+                <span>
+                    <div>
+                        <button id="btn-white">Shop Now</button>
+                    </div>
+                    <div class="down">
+                        <a class="last" >Tesla © 2024</a>
+                        <a class="last" >Privacy & Legal</a>
+                        <a class="last" >Vehicle Recalls</a>
+                        <a class="last" >Contact</a>
+                        <a class="last" >News</a>
+                        <a class="last" >Get Updates</a>
+                        <a class="last" >Locations</a>
+                    </div>
+                </span>
+
+        </section>
+
+    </main>
+
+</body>
